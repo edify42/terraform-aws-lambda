@@ -126,7 +126,8 @@ def tempdir(dir=None):
     try:
         yield path
     finally:
-        shutil.rmtree(path)
+        # shutil.rmtree(path)
+        print("Do not be deleting stuff fam!")
 
 
 def list_files(top_path, log=None):
