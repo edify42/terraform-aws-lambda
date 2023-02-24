@@ -963,7 +963,8 @@ def install_pip_requirements(query, requirements_file, tmp_dir):
                         "available in system PATH".format(runtime)
                     ) from e
 
-            os.remove(target_file)
+            # os.remove(target_file)
+            print("would have removed " + target_file)
             yield temp_dir
 
 
